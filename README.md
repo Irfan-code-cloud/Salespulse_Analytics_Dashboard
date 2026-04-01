@@ -2,7 +2,7 @@
 
 An interactive and professional dashboard for visualizing sales performance, product trends, and payment distributions. Built with React, Firebase, and Tailwind CSS.
 
-![SalesPulse Dashboard](https://picsum.photos/seed/salespulse/1200/600)
+<img width="990" height="558" alt="image" src="https://github.com/user-attachments/assets/e59b1854-47cd-4c19-b4bf-43cd66a875af" />
 
 ## 🚀 Features
 
@@ -49,7 +49,8 @@ An interactive and professional dashboard for visualizing sales performance, pro
    ```
 
 3. **Environment Configuration:**
-   - Copy the `.env.example` file to a new file named `.env`:
+
+   Copy the `.env.example` file to a new file named `.env`:
      ```bash
      cp .env.example .env
      ```
