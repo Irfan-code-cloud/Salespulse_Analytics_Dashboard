@@ -1,20 +1,80 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# SalesPulse Analytics Dashboard
 
-# Run and deploy your AI Studio app
+An interactive and professional dashboard for visualizing sales performance, product trends, and payment distributions. Built with React, Firebase, and Tailwind CSS.
 
-This contains everything you need to run your app locally.
+![SalesPulse Dashboard](https://picsum.photos/seed/salespulse/1200/600)
 
-View your app in AI Studio: https://ai.studio/apps/dec9c90e-eb53-4b03-ba73-7d13d89857b6
+## 🚀 Features
 
-## Run Locally
+- **Real-time Analytics**: Live updates of sales data and performance metrics.
+- **Interactive Visualizations**: Beautiful charts powered by Recharts for tracking trends and distributions.
+- **User Authentication**: Secure login and sign-up using Firebase Authentication (Email/Password & Google).
+- **Profile Management**: 
+  - Custom display names and unique usernames.
+  - Profile picture upload and management.
+  - Personalized dashboard experience.
+- **Advanced Filtering**: Filter sales data by product category, payment method, and custom date ranges.
+- **Responsive Design**: Fully optimized for desktop and mobile devices using Tailwind CSS.
+- **Smooth Interactions**: Elegant animations and transitions powered by Framer Motion.
 
-**Prerequisites:**  Node.js
+## 🛠️ Tech Stack
 
+- **Frontend**: [React 19](https://react.dev/), [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Backend/Database**: [Firebase Firestore](https://firebase.google.com/docs/firestore)
+- **Authentication**: [Firebase Auth](https://firebase.google.com/docs/auth)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Charts**: [Recharts](https://recharts.org/)
+- **Animations**: [Motion](https://motion.dev/)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- A Firebase project
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/salespulse-dashboard.git
+   cd salespulse-dashboard
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Configuration:**
+   - Copy the `.env.example` file to a new file named `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Open `.env` and fill in your Firebase project credentials from the [Firebase Console](https://console.firebase.google.com/).
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+   The app will be available at `http://localhost:3000`.
+
+## 🔒 Security
+
+This project uses **Firestore Security Rules** to ensure that:
+- Only authenticated users can access the database.
+- Users can only read and write their own profile data.
+- Data integrity is maintained through strict schema validation.
+
+Make sure to deploy the `firestore.rules` file to your Firebase project.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙌 Acknowledgments
+
+- Icons by [Lucide](https://lucide.dev/)
+- UI inspiration from modern SaaS dashboards.
